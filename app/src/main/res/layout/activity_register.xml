@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:background="@color/transparent"
+            android:id="@+id/songToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_back"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Sign In"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_title"
+        android:text="@string/sign_up"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"/>
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:id="@+id/llSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:id="@+id/spinnerCountries"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:hint="@string/enter_mobile_no"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:textColorHint="#A29D9D" />
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonContinue"
+            android:textColor="@color/white"
+            android:layout_below="@+id/llSpinner"
+            android:background="@drawable/roundbtn1"
+            android:text="@string/next"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/other_social"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="50dp"
+        android:text="@string/or_connect_with"
+        android:textSize="16sp"
+        android:textColor="@color/com_facebook_button_background_color"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/other_social"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginEnd="20dp"
+            android:id="@+id/gsign_in_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/gbtn"
+            android:contentDescription="@string/todo" />
+
+        <View
+            android:background="@color/com_facebook_button_background_color"
+            android:layout_width="1dp"
+            android:layout_height="60dp"/>
+
+        <ImageView
+            android:id="@+id/ivBtnFacebookLogin"
+            android:layout_marginStart="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/fbtn"
+            android:contentDescription="@string/todo" />
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_layout"/>
+
+    <TextView
+        android:id="@+id/view_terms_and_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="12sp"
+        android:text="@string/terms_of_services_and_privacy_policy" />
+
+
+
+</RelativeLayout>
+
+</LinearLayout>

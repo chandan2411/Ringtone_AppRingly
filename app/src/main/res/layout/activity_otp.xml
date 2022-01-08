@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/songToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/ic_back"
+                android:padding="5dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Sign In"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/verify_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Verify your Mobile Number"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:maxLines="1"
+            android:maxLength="6"
+            android:layout_marginTop="20dp"
+            android:id="@+id/editTextCode"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verify_otp"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter OTP"
+            android:inputType="textMultiLine"
+            android:textColorHint="#B8B5B5"/>
+
+        <TextView
+            android:id="@+id/auto_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Auto fetching Otp sent via SMS"
+            android:textColor="@color/black" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/buttonSignIn"
+            android:layout_width="250dp"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/auto_msg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/roundbtn1"
+            android:text="Next" />
+
+        <TextView
+            android:id="@+id/other_social"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonSignIn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:padding="5dp"
+            android:text="@string/or_connect_with"
+            android:textColor="@color/com_facebook_button_background_color"
+            android:textSize="16sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/other_social"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <ImageView
+                android:id="@+id/gsign_in_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/gbtn"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="1dp"
+                android:layout_height="60dp"
+                android:background="@color/com_facebook_button_background_color" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/ivBtnFacebookLogin"
+                android:layout_width="50dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/fbtn"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop" />
+
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/editTextCode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-214dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

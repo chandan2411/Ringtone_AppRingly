@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#181818</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">@color/white</color>
+    <color name="newcolor">#EB5D36</color>
+    <color name="new1color">#F1673C</color>
+    <color name="pink">#000000</color>
+    <color name="transparent">#272727</color>
+    <color name="transparent1">#77272727</color>
+    <color name="grey">#878787</color>
+    <color name="black" >#000000</color>
+    <color name="white">#ffFFFF</color>
+    <color name="ylw">#FDAC26</color>
+    <color name="d_ylw">#FFB67C1B</color>
+    <color name="searchDialogResultColor">@color/black</color>
+    <color name="searchDialogResultHighlightColor">@color/black</color>
+
+    <array name="randomColor">
+        <item name="color1">#CD6155</item>
+        <item name="color2">#E91E63</item>
+        <item name="color3">#9C27B0</item>
+        <item name="color4">#673AB7</item>
+        <item name="color5">#3F51B5</item>
+        <item name="color6">#2196F3</item>
+        <item name="color7">#FF5722</item>
+        <item name="color8">#FF9800</item>
+        <item name="color9">#03A9F4</item>
+        <item name="color10">#FFC107</item>
+        <item name="color11">#00BCD4</item>
+        <item name="color12">#009688</item>
+        <item name="color13">#4CAF50</item>
+        <item name="color14">#8BC34A</item>
+        <item name="color15">#3A2923</item>
+        <item name="color16">#FFEB3B</item>
+        <item name="color17">#FD1706</item>
+        <item name="color18">#FC0559</item>
+        <item name="color19">#2EEEDC</item>
+        <item name="color20">#04F70E</item>
+        <item name="color21">#386603</item>
+        <item name="color22">#7E8A0C</item>
+        <item name="color23">#376863</item>
+        <item name="color24">#5C3802</item>
+        <item name="color25">#295061</item>
+        <item name="color26">#CFC45D</item>
+        <item name="color27">#277599</item>
+        <item name="color28">#E666FC</item>
+        <item name="color29">#080809</item>
+        <item name="color30">#048BF3</item>
+        <item name="color31">#4E5050</item>
+        <item name="color32">#041057</item>
+        <item name="color33">#2EEEDC</item>
+        <item name="color34">#A26E22</item>
+        <item name="color35">#71AEB6</item>
+        <item name="color36">#B558C5</item>
+        <item name="color37">#5C72E9</item>
+        <item name="color38">#A73058</item>
+        <item name="color39">#B29B743B</item>
+        <item name="color40">#C1442B72</item>
+        <item name="color41">#1EAC8A</item>
+        <item name="color42">#A1805920</item>
+        <item name="color43">#D03D6B91</item>
+        <item name="color44">#DF42611D</item>
+        <item name="color45">#DC1C6B75</item>
+        <item name="color46">#E1CE4B77</item>
+        <item name="color47">#E1A3972A</item>
+        <item name="color48">#8F7FAD</item>
+        <item name="color49">#801C3E</item>
+        <item name="color50">#578B1A</item>
+    </array>
+
+
+</resources>
